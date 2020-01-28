@@ -19,7 +19,6 @@ Multiple app screen application using ReactNative and Java/Kotlin/Swift:
 - Between realms communication  (JS -> Native or Native -> JS). For example: Expense List (JS Realm) sends properties to next Fragment/ViewController (Native Realm) and this responds back to the (JS Realm) with some result
 - Test (e2e/unit test)
 
-
 ## Nice to have
 Want to go the extra mile? Here's few suggestion of things we'd like to see (or go crazy and implement what you think will impress us).
 - Implement with a state management library (Redux, Mobx, VueX, Graphql, ...)
