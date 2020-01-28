@@ -13,17 +13,21 @@ See the [API details](https://github.com/pleo-io/mobile-challenge/tree/master/ap
 Multiple app screen application using ReactNative and Java/Kotlin/Swift: 
 - A visually pleasing experience, you don’t have to be a designer but you must have put an effort into making this look good
 - A "componentized" approach, split your code into small building blocks, showcase your clean architecture skills.
-- Modules/Screens can be written on JS/TS but at least one should be native
+- Screens can be written on JS/TS but at least one should be native 
 - The use of any libraries or frameworks as long as you can explain to us why you chose them.
 - A brief description of your project. How long did it take? Which part was the hardest to implement? What functionalities are you most proud of?
+- Between realms communication  (JS -> Native or Native -> JS). For example: Expense List (JS Realm) sends properties to next Fragment/ViewController (Native Realm) and this responds back to the (JS Realm) with some result
+- Test (e2e/unit test)
+
 
 ## Nice to have
 Want to go the extra mile? Here's few suggestion of things we'd like to see (or go crazy and implement what you think will impress us).
 - Implement with a state management library (Redux, Mobx, VueX, Graphql, ...)
 - Implement solution in TypeScript
-- Native modules using Kotlin/Swift
 - Localization: support for multiple languages (English, French, ...)
-- Between realms communication  (JS -> Native or Native -> JS). For example: Expense List (JS Realm) sends properties to next Fragment/ViewController (Native Realm) and this responds back to the (JS Realm) with some result
+- CI/CD (Travis/GH Actions/ Etc)
+- Push Notification (extensions/Cuztomized)
+- Share Extension
 
 ## What we're looking for
 - Using high-quality existing libraries or small amounts of custom code. 
