@@ -2,7 +2,7 @@
 
 Note:
 
-> The API store the changes in memory, restarting the API server will wipe all changes.
+> The API stores the changes in memory, restarting the API server will wipe all changes.
 
 ## Run the API
 In the `/api` folder run:
