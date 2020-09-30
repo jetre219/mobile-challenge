@@ -1,14 +1,15 @@
-/**
- * @format
- */
-
-import 'react-native';
+import { render } from '@testing-library/react-native';
 import React from 'react';
 import App from '../App';
 
-// Note: test renderer must be required after react-native.
-import renderer from 'react-test-renderer';
+let app;
 
-it('renders correctly', () => {
-  renderer.create(<App />);
+describe('App component', () => {
+  beforeEach(() => {
+    app = render(<App />);
+  });
+
+  it('renders correctly', () => {
+    expect(app.toJSON()).toMatchSnapshot();
+  });
 });
