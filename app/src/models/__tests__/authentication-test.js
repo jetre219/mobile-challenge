@@ -24,7 +24,7 @@ describe('Authentication model', () => {
         await store.dispatch.authentication.logout();
       });
 
-      it('logs out the user', () => {
+      it('logs the user out', () => {
         expect(store.getState().authentication.loggedIn).toBe(false);
       });
     });

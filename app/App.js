@@ -7,6 +7,8 @@ import {
   Text,
   StatusBar,
 } from 'react-native';
+import { Provider } from 'react-redux';
+import store from './src/models';
 
 import {
   Header,
@@ -18,7 +20,7 @@ import {
 
 const App: () => React$Node = () => {
   return (
-    <>
+    <Provider store={store}>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
         <ScrollView
@@ -55,7 +57,7 @@ const App: () => React$Node = () => {
           </View>
         </ScrollView>
       </SafeAreaView>
-    </>
+    </Provider>
   );
 };
 

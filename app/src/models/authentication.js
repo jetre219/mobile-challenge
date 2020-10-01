@@ -16,6 +16,6 @@ export const authentication = {
 
     logout() {
       this.setLoggedIn(false);
-    }
+    },
   },
 };
