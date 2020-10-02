@@ -1,12 +1,17 @@
-import { render } from '@testing-library/react-native';
+import { render, act } from '@testing-library/react-native';
 import React from 'react';
 import App from '../App';
 
 let app;
 
 describe('App component', () => {
-  beforeEach(() => {
+  beforeEach(async () => {
     app = render(<App />);
+    await act(async () => {});
+  });
+
+  afterEach(() => {
+    app.unmount();
   });
 
   it('renders correctly', () => {
