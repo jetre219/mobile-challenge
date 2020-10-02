@@ -21,7 +21,6 @@ export const Screens = ({ loggedIn }) => {
   );
 };
 
-/* istanbul ignore next */
 const mapState = (state) => ({
   loggedIn: state.authentication.loggedIn,
 });

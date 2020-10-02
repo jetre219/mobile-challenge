@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
   },
 });
 
-/* istanbul ignore next */
 const mapDispatch = (dispatch) => ({
   login: dispatch.authentication.login,
 });

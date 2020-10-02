@@ -20,7 +20,11 @@ describe('Screens component', () => {
 
   describe('given user is not logged in', () => {
     beforeEach(async () => {
-      screens = render(<Provider store={store}><Screens loggedIn={false} /></Provider>);
+      screens = render(
+        <Provider store={store}>
+          <Screens loggedIn={false} />
+        </Provider>,
+      );
       await act(async () => {});
     });
 
