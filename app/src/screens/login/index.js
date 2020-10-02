@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { View, Button, StyleSheet } from 'react-native';
-import { connect } from 'react-redux'
-
+import { connect } from 'react-redux';
 
 export const LoginScreen = ({ login }) => (
   <View style={styles.container}>
@@ -18,7 +17,7 @@ const styles = StyleSheet.create({
 });
 
 /* istanbul ignore next */
-const mapDispatch = dispatch => ({
+const mapDispatch = (dispatch) => ({
   login: dispatch.authentication.login,
 });
 

@@ -18,7 +18,7 @@ describe('Home screen', () => {
 
   describe('when pressing login button', () => {
     beforeEach(() => {
-      fireEvent.press(homeScreen.getByText("Login"))
+      fireEvent.press(homeScreen.getByText('Login'));
     });
 
     it('calls the login function', () => {
