@@ -41,6 +41,7 @@
       "@testing-library/jest-native/extend-expect"
     ],
     "setupFiles": [
+      "./jest.setup.js",
       "./node_modules/react-native-gesture-handler/jestSetup.js"
     ],
     "coverageThreshold": {
