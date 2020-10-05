@@ -10,7 +10,14 @@ exports[`Home screen renders correctly 1`] = `
     }
   }
 >
-  <Text>
+  <Text
+    style={
+      Object {
+        "color": "#242424",
+        "fontSize": 27.5,
+      }
+    }
+  >
     Home Screen
   </Text>
 </View>

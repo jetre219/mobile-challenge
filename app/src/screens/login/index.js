@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { View, Button, StyleSheet } from 'react-native';
+import { View, StyleSheet } from 'react-native';
+import { Button } from 'react-native-elements';
 import { connect } from 'react-redux';
 
 export const LoginScreen = ({ login }) => (
   <View style={styles.container}>
-    <Button title="Login" onPress={login} />
+    <Button title="Login" onPress={login} titleStyle={styles.button} raised />
   </View>
 );
 
@@ -13,6 +14,10 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  button: {
+    fontSize: 22,
+    marginHorizontal: 8,
   },
 });
 
